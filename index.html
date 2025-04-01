@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+</head>
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h1>Topics Covered</h1>
+    <ol type="I">
+        <li>Python</li>
+        <li>Database</li>
+        <li>Web Development</li>
+        <li>Software Engineering</li>
+        <li>Startup Buiding</li>
+    </ol>
+
+    <!-- External Image -->
+    <h2>Image from Pexels</h2>
+    <img src="https://render.fineartamerica.com/images/rendered/default/canvas-print/6.5/10/mirror/break/images/artworkimages/medium/1/light-bulb-and-splash-water-setsiri-silapasuwanchai-canvas-print.jpg" alt="Beautiful Landscape" height="300" width="800">
+
+    <!-- Table of Contacts -->
+    <h2>Contact List</h2>
+    <table border="1" style="border-collapse: collapse; width: auto;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Diana Chep</td>
+                <td>123 Nairobi</td>
+                <td>+254567892</td>
+                <td>dian@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Sharleen Chero</td>
+                <td>456 Nakuru</td>
+                <td>+2554321</td>
+                <td>Sharl@yahoo.com</td>
+            </tr>
+            <tr>
+                <td>Sharnice Atieno</td>
+                <td>789 Kericho</td>
+                <td>+254321987</td>
+                <td>shar@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Alfo Nganga</td>
+                <td>321 Mombasa</td>
+                <td>+254890123</td>
+                <td>alfo@yahoo.com</td>
+            </tr>
+            <tr>
+                <td>Ben Kirui</td>
+                <td>147 Narok</td>
+                <td>+254109876</td>
+                <td>benk@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="/submit" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Dropdown Field -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Perfomance:</label><br>
+        <input type="radio" id="Excelent" name="perfomance" value="excelent" required>
+        <label for="Excelent">Excelent</label><br>
+        <input type="radio" id="credit" name="perfomance" value="premium">
+        <label for="credit">Credit</label><br>
+        <input type="radio" id="pass" name="perfomance" value="basic" required>
+        <label for="Excelent">Pass</label><br>
+        <input type="radio" id="fail" name="perfomance" value="basic" required>
+        <label for="Fail">Fail</label><br>
+        <!-- Checkboxes -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="reading" name="interests" value="reading">
+        <label for="reading">Reading</label><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
